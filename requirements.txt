@@ -1,1 +1,7 @@
 robotframework
+robotframework-requests
+robotframework-seleniumlibrary
+robotframework-sshlibrary
+
+bs4
+selenium
