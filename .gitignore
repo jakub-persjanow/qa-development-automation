@@ -1,1 +1,5 @@
 /results
+*.png
+*.html
+*.xml
+.DS_Store
