@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    /Users/demiangela/Desktop/repoAuto/qa-development-automation/cookieManagement/resources/setup/setupKeywordsCookies.robot
+Resource    ../setup/setupKeywordsCookies.robot
 Library     SeleniumLibrary
 
 *** Variables ***

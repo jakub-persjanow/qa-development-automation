@@ -1,5 +1,5 @@
 *** Settings ***
-Resource   /Users/demiangela/Desktop/repoAuto/qa-development-automation/oneTwoButtons/Resources/Setup/keywordsButtons.robot
+Resource  ../Setup/keywordsButtons.robot
 Library    SeleniumLibrary
 
 *** Variables ***
