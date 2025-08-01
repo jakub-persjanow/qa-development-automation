@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  .Setup/keywordsButtons.robot
+Resource  ../Setup/keywordsButtons.robot
 Library    SeleniumLibrary
 
 *** Variables ***

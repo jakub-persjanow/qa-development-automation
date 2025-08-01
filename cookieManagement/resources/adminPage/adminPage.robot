@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    .setup/setupKeywordsCookies.robot
+Resource    ../setup/setupKeywordsCookies.robot
 Library     SeleniumLibrary
 
 *** Variables ***
