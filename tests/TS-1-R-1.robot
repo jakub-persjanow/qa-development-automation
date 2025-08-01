@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../resources_1/resources1.robot
+Resource    ../resources/resources1.robot
 
 *** Test Cases ***
 TC-1 Validate Dynamic Table Mini App Header
