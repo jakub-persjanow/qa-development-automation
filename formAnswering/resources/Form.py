@@ -1,4 +1,4 @@
-import FormAnswer from FormAnswer
+from FormAnswer import FormAnswer
 
 class Form:
     def __init__(self, header_text, name_header_text, email_header_text) -> None:

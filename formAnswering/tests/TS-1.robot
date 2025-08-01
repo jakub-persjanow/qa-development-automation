@@ -1,5 +1,5 @@
 *** Settings ***
-Library     FormKeywords.py
+Library     ../resources/FormKeywords.py
 Library     SeleniumLibrary
 
 *** Test Cases ***
