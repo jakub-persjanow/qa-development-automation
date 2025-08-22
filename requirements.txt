@@ -5,3 +5,7 @@ robotframework-sshlibrary
 
 bs4
 selenium
+
+pandas
+numpy
+scikit-learn
