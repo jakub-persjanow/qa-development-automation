@@ -17,15 +17,25 @@ words = ['rainbow', 'computer', 'science', 'programming',
 word = random.choice(words)
 chances = 7
 user_guess = 0
-hiddenWord = ["-"] * len(word) # początkow próbowałem uzyc replace() ale po pierwsze zamienialo tylko biezacego stringa a reszta pozostawala "-" a po drugie potrzebowalem miec indeksy
-print('Guess the word!')
+hiddenWord = ["-"] * len(word) 
+
+user_guessed_characters = []
 
 while "-" in hiddenWord and user_guess < chances:
     print(" ".join(hiddenWord))
     user_input = str(input("Provide a letter "))
+    if len(user_input) > 1:
+        user_guess +=1
+        print('You can only use 1 letter, remaining guesses: ', chances-user_guess)
+        continue
+
+    if user_input in user_guessed_characters:
+        user_guess +=1
+        print('letter already guessed, remaining guesses: ', chances-user_guess)
 
     if user_input in word:
-        for i, character in enumerate(word): #musiałem znaleźć enumerate, brakowało mi metody która daje i element w stringu i jego indeks
+        user_guessed_characters.append(user_input)
+        for i, character in enumerate(word): 
             if character == user_input:
                 hiddenWord[i] = user_input
 
@@ -37,8 +47,3 @@ if "-" not in hiddenWord:
     print("Winner!")
 else:
     print("Looser!")
-
-
-# problemy w kodzie:
-# mozna wprowadzac kilka razy te samą literę i liczba szans nie spada,
-# mozna wprowadzic wiecej niz jedna litere i liczba szans spada
