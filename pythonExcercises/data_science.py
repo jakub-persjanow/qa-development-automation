@@ -8,8 +8,8 @@ x = pd.DataFrame(wine.data, columns=wine.feature_names)
 print(type(x))
 print(x)
 
-# 0. Stworzyć inetraktywne okno
-# 1. Wyprintować nazwy kolumn
+# 0. Stworzyć inetraktywne okno - done
+# 1. Wyprintować nazwy kolumn 
 # 2. Wyprintować średnie wartości dla kaźdej kolumny
 # 3. wczytać cvskę z bohaterami uzywając pd.read_csv()
 # 4. Wyprintować nazwy kolumn bohaterów

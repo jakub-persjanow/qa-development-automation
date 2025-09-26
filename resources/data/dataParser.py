@@ -21,7 +21,7 @@ try:
     driver.get("https://qaplayground.dev/apps/dynamic-table/")
 
     # Wait until the table loads
-    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "tbody")))
+    WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, '//table[@id="example"]/tbody')))
 
     # Get page source after JavaScript execution
     html = driver.page_source
