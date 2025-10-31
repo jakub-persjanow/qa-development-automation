@@ -9,3 +9,8 @@ selenium
 pandas
 numpy
 scikit-learn
+
+aiohttp
+fastapi[all]
+pymongo[srv]
+python-dotenv
