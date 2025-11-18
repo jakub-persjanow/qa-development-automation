@@ -21,6 +21,6 @@ def shutdown_db_client():
 app.include_router(book_router, tags=["books"], prefix="/book")
 
 # ZADANIA:
-# NAPRAWIĆ BŁĘDY
-# PRZENIEŚĆ STARE API DO NOWEGO
+# NAPRAWIĆ BŁĘDY - done
+# PRZENIEŚĆ STARE API DO NOWEGO - done
 # STWORZYC OD NOWA API Z JAKIMIŚ INNYMI MODELAMI
